@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.js"></script>
+
+    <script src="sketch.js"></script>
+
+    <!-- add extra scripts below -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="helperFunctions.js"></script>
+
+    <script src="freehandTool.js"></script>
+    <script src="lineToTool.js"></script>
+    <script src="sprayCanTool.js"></script>
+    <script src="mirrorDrawTool.js"></script>
+    <script src="marker.js"></script>
+    <script src="Ellipses.js"></script>
+    <script src="paint-light.js"></script>
+    <script src="paint-dark.js"></script>
+    <script src="rectangle.js"></script>
+    <script src="polygon.js"></script>
+    <script src="stamp.js"></script>
+    <script src="zigzag.js"></script> 
+    <script src="eraser.js"></script>
+    <script src="curve.js"></script>
+    <script src="scissors.js"></script>
+    <script src="textbox.js"></script>
+    
+ 
+    
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div class="wrapper">
+      <div class="box header">My Drawing App
+
+        <button id="clearButton">Clear</button>
+        <button id="saveImageButton">Save Image</button>
+        <button id="changeBackGroundColour">Change Background Colour</button>
+      </div>
+      <div class="box" id="sidebar"></div>
+      <div id="content"></div>
+    
+      <div class="box colourPalette"></div>
+      <div id="stamp-slider"></div>
+      
+      <input type="color" id="customColorInput">
+      <button id="addCustomColorButton">Add Custom Color</button>
+      <div class="box options" id="stores-buttons">
+        <button id="cut">Select Area</button>
+        <button id="text">Edit Text</button>
+      </div>
+
+	</div>
+  </body>
+</html>

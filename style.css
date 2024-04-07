@@ -1,0 +1,269 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+#sidebar {
+	grid-area: sidebar;
+	overflow-y: scroll;
+}
+
+#content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif
+}
+
+.footer{
+  grid-area: footer;
+}
+
+#clearButton{
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-family:  Lucida Grande, sans-serif;
+	font-size: 0.5em;
+}
+
+#clearButton:hover{
+	background-color: red;
+	color: white;
+	text-decoration: none;
+}
+
+#saveImageButton{
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-family:  Lucida Grande, sans-serif;
+	font-size: 0.5em;
+}
+
+#saveImageButton:hover{
+	background-color: green;
+	color: white;
+	text-decoration: none;
+}
+
+#changeBackGroundColour{
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-family:  Lucida Grande, sans-serif;
+	font-size: 0.5em;
+}
+
+#changeBackGroundColour:hover{
+    background-color: color-mix(in lch, purple 60%, maroon 40%);
+}
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:5px;
+}
+
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+
+.colourPalette{
+	grid-area: colourP;
+	display:flex;
+	flex-direction:grid;
+	flex-flow: wrap;
+	height: 200px;
+	overflow-y: scroll;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+}
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	max-height: 40px;
+	max-width: 40px;
+	margin: 5px;
+}
+
+
+	.wrapper {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 70px 230px  minmax(500px, 1fr);
+		grid-template-rows: 35px minmax(500px, 1fr) 160px;
+		grid-template-areas:
+               "header header header"
+				"sidebar content content"
+                "colourP colourP options";
+		background-color: #fff;
+		color: #444;
+		font-size: 16px;
+	
+	}
+.box {
+  background-color: #444;
+  color: #fff;
+  font-size: 150%;
+}
+
+.colourPalette{
+	background-color: #444;
+}
+
+
+.header {
+  background-color: #999;
+}
+
+#directionButton
+{
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-family:  Lucida Grande, sans-serif;
+	font-size: 0.5em;
+}
+
+#directionButton:hover
+{
+    background-color: pink;
+	color: white;
+	text-decoration: none;
+}
+
+
+#cut{
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-family:  Lucida Grande, sans-serif;
+	font-size: 0.5em;
+}
+
+#cut:hover{
+	background-color: pink;
+	color: white;
+	text-decoration: none;
+}
+
+#text{
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-family:  Lucida Grande, sans-serif;
+	font-size: 0.5em;
+}
+
+#text:hover{
+	background-color: pink;
+	color: white;
+	text-decoration: none;
+}
+
+#stores-buttons
+{
+	height: 200px;
+}
+
+#customColorInput{
+	position: absolute;
+	border-radius: 5px;
+	bottom: -100px;
+	left: 0;
+}
+
+#customColorInput:hover{
+	background:#999;
+}
+
+#addCustomColorButton{
+	margin-top: 40px;
+	padding: 2px 10px;
+	border-radius: 5px;
+    font-family:  Lucida Grande, sans-serif;
+	font-size: 0.9em;
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+	margin-left: 55px;
+
+}
+
+#addCustomColorButton:hover{
+    background-color: blue;
+	color: white;
+	text-decoration: none;
+	
+	
+}
+
+
+/*media query for medium - sized screens */
+ @media screen and (max-width: 1024px){
+	.wrapper{
+		grid-template-columns: 70px 150px minmax(300px, 1fr);
+		
+	}
+	
+	#addCustomColorButton{
+		margin-top: 40px;
+		padding: 2px 4px;
+		border-radius: 2px;
+		font-family:  Lucida Grande, sans-serif;
+		font-size: 0.9em;
+		position: absolute;
+		bottom: -390px;
+		left: 0;
+		margin-left: 55px;
+	}
+
+	#customColorInput{
+		position: absolute;
+		border-radius: 5px;
+		bottom: -390px;
+		left: 0;
+	}
+ }
+
+
+
+
+/* Media Query for smaller-sized screens */
+@media screen and (max-width: 600px)
+{
+	.wrapper{
+		grid-template-columns: 100%;
+		grid-template-areas: 
+		"header"
+		"content"
+		"sidebar"
+		"colourP"
+		"options";
+	}
+
+	#addCustomColorButton{
+		margin-top: 40px;
+		padding: 2px 4px;
+		border-radius: 2px;
+		font-family:  Lucida Grande, sans-serif;
+		font-size: 0.9em;
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+		margin-left: 55px;
+	}
+
+	#customColorInput{
+		position: absolute;
+		border-radius: 5px;
+		bottom: -50px;
+		left: 0;
+	}
+}
+ 
+
+  
